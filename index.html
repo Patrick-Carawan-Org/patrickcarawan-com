@@ -5,11 +5,37 @@
 	<title>PDC</title>
 	<style>
 		body {
+			background-color: #CADBE4;
+			margin: 0;
+		}
+		main {
 			max-width: 75%;
 			display: flex;
 			margin-right: auto;
 			margin-left: auto;
 			flex-direction: column;
+			margin-top: 0;
+		}
+		nav {
+			position: sticky;
+			top: 0;
+			left: 0;
+			right: 0;
+			background-color: #4E636A;
+			padding: 20px 40px;
+		}
+		nav > ul {
+			display: flex;
+			margin: 0;
+			flex-direction: row;
+			justify-content: space-between;
+			list-style: none;
+			padding: 0;
+			height: 100%;
+		}
+		.header-link {
+			text-decoration: none;
+			color: #B3ACA7; 
 		}
 		.center-header {
 			width: 100%;
@@ -17,29 +43,43 @@
 			flex-direction: row;
 			justify-content: center;
 		}
+		.image-container {
+			height: 66vh;
+			overflow: hidden;
+			display: flex;
+		}
+		.image-container > img {
+			object-fit: cover;
+			aspect-ratio: 16 / 9;
+			width: 100%;
+		}
 	</style>
 	<script type="module" src="main.js"></script>
 </head>
 <body>
 	<nav>
-	<ul>
-		<li>
-			<a href="#welcome">
-				Welcome
-			</a>
-		</li>
-		<li>
-			<a href="#my_background">
-				My Background
-			</a>
-		</li>
-		<li>
-			<a href="">
-				What I'm Working on
-			</a>
-		</li>
-	</ul>
+		<ul>
+			<li>
+				<a class="header-link" href="#welcome">
+					Welcome
+				</a>
+			</li>
+			<li>
+				<a class="header-link" href="#my_background">
+					My Background
+				</a>
+			</li>
+			<li>
+				<a class="header-link" href=,"">
+					What I'm Working on
+				</a>
+			</li>
+		</ul>
 	</nav>
+	<div class="image-container">
+		<img src="./public/ggp.jpg" alt="The Golden Gate Bridge">
+	</div>
+	<main>
 	<div class="center-header">
 		<h1 id="welcome">Welcome</h1>
 	</div>
@@ -70,5 +110,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 <br>
 <br>
+
+	</main>
 </body>
 </html>
